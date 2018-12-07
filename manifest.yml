@@ -1,0 +1,10 @@
+---
+applications:
+  - name: cf-pring-multiple-datasources
+    path: target/cf-spring-multiple-datasources.jar
+    memory: 1G
+    services:
+      - db1
+      - db2
+    buildpacks:
+      - https://github.com/cloudfoundry/java-buildpack.git

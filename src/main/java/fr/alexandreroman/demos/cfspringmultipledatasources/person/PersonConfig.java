@@ -60,7 +60,7 @@ public class PersonConfig {
             DataSource dataSource) {
         return builder.dataSource(dataSource)
                 .persistenceUnit("person")
-                .packages("fr.alexandreroman.demos.cfspringmultipledatasources.person")
+                .packages(getClass())
                 .build();
     }
 

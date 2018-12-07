@@ -59,7 +59,7 @@ public class SuperheroConfig {
             @Qualifier("superhero") DataSource dataSource) {
         return builder.dataSource(dataSource)
                 .persistenceUnit("superhero")
-                .packages("fr.alexandreroman.demos.cfspringmultipledatasources.superhero")
+                .packages(getClass())
                 .build();
     }
 
